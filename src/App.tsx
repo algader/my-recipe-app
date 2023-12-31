@@ -59,7 +59,7 @@ const App: React.FC = () => (
 
         <Route exact path="/">
 
-          <Redirect to="/account/login" />
+          <Redirect to="/my-recipe/all-posts" />
 
         </Route>
 

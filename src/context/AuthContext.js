@@ -1,5 +1,5 @@
 import { Storage } from "@capacitor/storage"; 
-import {  IonLoading }  from "@ionic/react";
+import {  IonSpinner }  from "@ionic/react";
 import { createContext, useState, useEffect,  } from "react";
 
 
@@ -12,7 +12,7 @@ const AuthContextProvider = (props) => {
 
     const [loggedIn, setLoggedIn] = useState(false);
 
-    const [showLoading, setShowLoading] = useState(false);
+    const [showLoading, setShowLoading] = useState(true);
 
     
 
@@ -61,7 +61,7 @@ const AuthContextProvider = (props) => {
         {showLoading 
         
         ? 
-        <IonLoading isOpen={showLoading} /> 
+        <IonSpinner name='dots' style={{ display: 'block', margin: 'auto' }}isOpen={showLoading} /> 
         
         : 
         

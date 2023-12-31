@@ -4,7 +4,7 @@ import {
 
    IonContent, 
    
-   IonLoading,
+   IonSpinner,
 
    IonAlert,
 
@@ -136,7 +136,7 @@ const  Profile = () => {
           
           ?
           
-          <IonLoading isOpen={showLoading} />
+          <IonSpinner name='dots' style={{ display: 'block', margin: 'auto' }} isOpen={showLoading} />
           
           :
             <>

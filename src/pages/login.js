@@ -1,4 +1,4 @@
-import { IonPage,  IonContent, IonIcon, IonList, IonItem, IonLabel, IonInput, IonButton, IonRouterLink, IonLoading, IonAlert  }  from "@ionic/react"
+import { IonPage,  IonContent, IonIcon, IonList, IonItem, IonLabel, IonInput, IonButton, IonRouterLink, IonSpinner, IonAlert  }  from "@ionic/react"
 
 import Header from "../components/Header/Header";
 
@@ -173,7 +173,7 @@ import { AuthContext } from "../context/AuthContext";
              
              ? 
              
-             <IonLoading isOpen={showLoading} />
+             <IonSpinner name='dots' style={{ display: 'block', margin: 'auto' }} isOpen={showLoading} />
             
              :
              

@@ -21,6 +21,7 @@ ion-content{
 
 div.icon-container {
     margin: auto;
+    
 }
 
 
@@ -38,6 +39,8 @@ div.icon-container {
     font-size: 16px;
     margin-top: 10px;
   }
+
+  
   
   .RichEditor-editor .public-DraftEditorPlaceholder-root,
   .RichEditor-editor .public-DraftEditor-content {

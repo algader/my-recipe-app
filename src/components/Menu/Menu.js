@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonMenu, IonItem, IonLabel, IonList,  IonTitle, IonToolbar, IonIcon, IonAvatar, IonImg, IonText } from "@ionic/react"
+import { IonContent, IonHeader, IonMenu, IonItem, IonLabel, IonList,  IonTitle, IonToolbar, IonIcon, IonAvatar, IonImg, IonText, IonSpinner } from "@ionic/react"
 
 import { personCircleOutline, clipboardOutline, logOutOutline } from "ionicons/icons";
 
@@ -90,7 +90,7 @@ const Menu = () => {
 
          ? 
 
-         <IonLoading isOpen={showLoading} /> 
+         <IonSpinner name='dots' style={{ display: 'block', margin: 'auto' }} isOpen={showLoading} /> 
           
          : 
          

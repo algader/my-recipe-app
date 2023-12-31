@@ -1,4 +1,4 @@
-import { IonPage,  IonContent,  IonAvatar, IonImg, IonItem, IonLabel, IonInput, IonButton, IonRouterLink, IonText, IonLoading, IonAlert }  from "@ionic/react"
+import { IonPage,  IonContent,  IonAvatar, IonImg, IonItem, IonLabel, IonInput, IonButton, IonRouterLink, IonText, IonSpinner, IonAlert }  from "@ionic/react"
 
 import Header from "../components/Header/Header";
 
@@ -108,7 +108,7 @@ import { useHistory } from "react-router";
                 
                 ? 
 
-                <IonLoading isOpen={showLoading} />
+                <IonSpinner name='dots' style={{ display: 'block', margin: 'auto' }} isOpen={showLoading} />
                 
                 :
                   
